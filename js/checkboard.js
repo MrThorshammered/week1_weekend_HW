@@ -121,23 +121,23 @@ if (currentPlayer.innerHTML === "X"){
 // movesArray = movesArray.push[index]
 // need a function to place an X or an O into a box once it's clicked
 body.addEventListener('click', function(){
-if (box1_1.innerHTML&&box1_2.innerHTML&&box1_3.innerHTML === "X" || 
-	box2_1.innerHTML&&box2_2.innerHTML&&box2_3.innerHTML === "X" ||
-	box3_1.innerHTML&&box3_2.innerHTML&&box3_3.innerHTML === "X" ||
-	box1_1.innerHTML&&box2_2.innerHTML&&box3_3.innerHTML === "X" ||
-	box1_3.innerHTML&&box2_2.innerHTML&&box3_1.innerHTML === "X" ||
-	box1_1.innerHTML&&box2_1.innerHTML&&box3_1.innerHTML === "X" ||
-	box1_3.innerHTML&&box2_3.innerHTML&&box3_3.innerHTML === "X" ||
-	box1_2.innerHTML&&box2_2.innerHTML&&box3_2.innerHTML === "X"){
+if ((box1_1.innerHTML === "X" &&box1_2.innerHTML === "X" &&box1_3.innerHTML === "X") || 
+	(box2_1.innerHTML === "X" &&box2_2.innerHTML === "X" &&box2_3.innerHTML === "X") ||
+	(box3_1.innerHTML === "X" &&box3_2.innerHTML === "X" &&box3_3.innerHTML === "X") ||
+	(box1_1.innerHTML === "X" &&box2_2.innerHTML === "X" &&box3_3.innerHTML === "X") ||
+	(box1_3.innerHTML === "X" &&box2_2.innerHTML === "X" &&box3_1.innerHTML === "X") ||
+	(box1_1.innerHTML === "X" &&box2_1.innerHTML === "X" &&box3_1.innerHTML === "X") ||
+	(box1_3.innerHTML === "X" &&box2_3.innerHTML === "X" &&box3_3.innerHTML === "X") ||
+	(box1_2.innerHTML === "X" &&box2_2.innerHTML === "X" &&box3_2.innerHTML === "X")){
 	alert("X is the winner");
-}else if (box1_1.innerHTML&&box1_2.innerHTML&&box1_3.innerHTML === "O" || 
-	      box2_1.innerHTML&&box2_2.innerHTML&&box2_3.innerHTML === "O" ||
-	      box3_1.innerHTML&&box3_2.innerHTML&&box3_3.innerHTML === "O" ||
-	      box1_1.innerHTML&&box2_2.innerHTML&&box3_3.innerHTML === "O" ||
-	      box1_3.innerHTML&&box2_2.innerHTML&&box3_1.innerHTML === "O" ||
-	      box1_1.innerHTML&&box2_1.innerHTML&&box3_1.innerHTML === "O" ||
-	      box1_3.innerHTML&&box2_3.innerHTML&&box3_3.innerHTML === "O" ||
-	      box1_2.innerHTML&&box2_2.innerHTML&&box3_2.innerHTML === "O"){
+}else if ((box1_1.innerHTML === "O" &&box1_2.innerHTML === "O" &&box1_3.innerHTML === "O") || 
+	      (box2_1.innerHTML === "O" &&box2_2.innerHTML === "O" &&box2_3.innerHTML === "O") ||
+	      (box3_1.innerHTML === "O" &&box3_2.innerHTML === "O" &&box3_3.innerHTML === "O") ||
+	      (box1_1.innerHTML === "O" &&box2_2.innerHTML === "O" &&box3_3.innerHTML === "O") ||
+	      (box1_3.innerHTML === "O" &&box2_2.innerHTML === "O" &&box3_1.innerHTML === "O") ||
+	      (box1_1.innerHTML === "O" &&box2_1.innerHTML === "O" &&box3_1.innerHTML === "O") ||
+	      (box1_3.innerHTML === "O" &&box2_3.innerHTML === "O" &&box3_3.innerHTML === "O") ||
+	      (box1_2.innerHTML === "O" &&box2_2.innerHTML === "O" &&box3_2.innerHTML === "O")){
 	alert("O is the winner");
 }else{
 	alert("The game is a tie")
