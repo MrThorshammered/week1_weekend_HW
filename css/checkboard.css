@@ -1,4 +1,4 @@
-.sidebar{
+#sidebar{
 	margin-right: 20px;
 	margin-left: 20px;
 	display: inline-block;
@@ -31,3 +31,17 @@
 body 	h1{
 	margin-left: 20px;
 }
+
+button{
+	background-color: black;
+	display: inline-block;
+	color: white;
+}
+
+
+
+
+
+
+
+
