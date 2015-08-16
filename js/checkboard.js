@@ -1,8 +1,18 @@
+// Changing players from x to o 
+function changePlayer(){
+
+ currentPlayer === 'X' ? currentPlayer = 'O' : currentPlayer = 'X';
+ document.getElementById('currentPlayer').innerHTML = currentPlayer;
+}
+
+// var currentPlayer = getElementById(currentPlayer);
+
 // declare all possible winning declerations
 var winningArray = [[0,1,2],[3,4,5],[6,7,8],[0,4,8],[1,4,7],[2,4,6],[0,3,6],[2,5,8]];
 var movesArray;
 // way of logging which box has been clicked. probably good idea to console log at first
- var clickBox = document.getElementsByClassName('square')
+ var clickBox = document.getElementsByClassName('square');
+
  var clickBox1 = clickBox[0];
  var clickBox2 = clickBox[1];
  var clickBox3 = clickBox[2];
@@ -13,9 +23,77 @@ var movesArray;
  var clickBox8 = clickBox[7];
  var clickBox9 = clickBox[8];
 
+ clickBox1.addEventListener("click", function(){
+ console.log("box 1 was clicked");
+   if (box1_1.innerHTML === 'X'){
+   	box1_1.innerHTML = 'O'
+   }else{
+   	box1_1.innerHTML = 'X'
+   } });
 
+ clickBox2.addEventListener("click", function(){
+ console.log("box 2 was clicked");
+if (currentPlayer.innerHTML === 'X'){
+   	box1_2.innerHTML = 'O'
+   }else{
+   	box1_2.innerHTML = 'X'
+   } });
 
+ clickBox3.addEventListener("click", function(){
+ console.log("box 3 was clicked");
+if (box1_3.innerHTML === 'X'){
+   	box1_3.innerHTML = 'O'
+   }else{
+   	box1_3.innerHTML = 'X'
+   } });
 
+ clickBox4.addEventListener("click", function(){
+ console.log("box 4 was clicked");
+if (box2_1.innerHTML === 'X'){
+   	box2_1.innerHTML = 'O'
+   }else{
+   	box2_1.innerHTML = 'X'
+   } });
+
+ clickBox5.addEventListener("click", function(){
+ console.log("box 5 was clicked");
+ if (box2_2.innerHTML === 'X'){
+   	box2_2.innerHTML = 'O'
+   }else{
+   	box2_2.innerHTML = 'X'
+   } });
+
+ clickBox6.addEventListener("click", function(){
+ console.log("box 6 was clicked");
+if (box2_3.innerHTML === 'X'){
+   	box2_3.innerHTML = 'O'
+   }else{
+   	box2_3.innerHTML = 'X'
+   } });
+
+ clickBox7.addEventListener("click", function(){
+ console.log("box 7 was clicked");
+if (box3_1.innerHTML === 'X'){
+   	box3_1.innerHTML = 'O'
+   }else{
+   	box3_1.innerHTML = 'X'
+   } });
+ 
+ clickBox8.addEventListener("click", function(){
+ console.log("box 8 was clicked");
+if (box3_2.innerHTML === 'X'){
+   	box3_2.innerHTML = 'O'
+   }else{
+   	box3_2.innerHTML = 'X'
+   } });
+
+ clickBox9.addEventListener("click", function(){
+ console.log("box 9 was clicked");
+if (box3_3.innerHTML === 'X'){
+   	box3_3.innerHTML = 'O'
+   }else{
+   	box3_3.innerHTML = 'X'
+   } });
 
 
 // need an array to store clickEvent data
@@ -28,9 +106,5 @@ var movesArray;
 // an x or an o to that particular box. then watch the box so that values can be
 // toted up to get a combination from winning array
 
-// Changing players from x to o 
-function changePlayer(){
 
- currentPlayer === 'X' ? currentPlayer = 'O' : currentPlayer = 'X';
- document.getElementById('currentPlayer').innerHTML = currentPlayer;
-}
+
